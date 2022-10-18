@@ -210,3 +210,14 @@ See the [wiki](https://github.com/wurstmeister/kafka-docker/wiki/ReleaseProcess)
 ## Tutorial
 
 [http://wurstmeister.github.io/kafka-docker/](http://wurstmeister.github.io/kafka-docker/)
+
+
+## Test a kafka consumer
+```
+  docker exec -it kafka-docker-kafka-1 ./opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test
+```
+
+## Test a kafka producer
+```
+  docker exec -it kafka-docker-kafka-1 ./opt/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test
+```
